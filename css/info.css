@@ -1,0 +1,288 @@
+    .info{
+        /*position: relative;*/
+        z-index: 100;
+        height:auto;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        /*background: #283040;*/
+        /*margin: 10vh;*/
+
+    }
+    .section{
+        /*display: -webkit-flex;*/
+        /*display: flex;*/
+        width: 100%;
+        height: 100vh;
+        display: none;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        align-items: center;
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 2em 0 0;
+        text-align: center;
+        transition:display 1s ease 1s;
+    }
+    .show{
+        display: block;
+        /*animation: show 1.5s ease-out both;*/
+    }
+    .hide{
+        display: none;
+    }
+    /*@keyframes hide{*/
+    /*0%{*/
+       /*transform: scale(1,1);*/
+    /*}*/
+        /*30%{*/
+            /*transform: scale(1,0.01);*/
+        /*}*/
+    /*60%{*/
+        /*transform: scale(.5,0.01);*/
+    /*}*/
+    /*100%{*/
+        /*!*display: none;*!*/
+        /*transform: scale(0,0);*/
+    /*}*/
+    /*}*/
+
+   .active{
+        /*display: none;*/
+       width: 100%;
+       height: 100%;
+        animation: show 1.5s ease-out both;
+    }
+.section-content{
+    /*padding-top:50px;*/
+    /*height: 100%;*/
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+}
+    .section-content .cd-btn {
+        display: inline-block;
+        padding: 0.4em 1.6em;
+        margin-top: 4em;
+        box-sizing: border-box;
+        border-radius: 50em;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        background-color: #4089a6;
+
+  }
+    .cd-btn:hover{
+        background-color: #323c50;
+    }
+    #about{
+        width: 100%;
+        height: 100%;
+    }
+    #about-content, #contact-content, #demo-content, #home-content, #resume-content, #skill-content {
+        width:100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    #about-title{
+        width: 200px;
+        margin: 0 auto 30px;
+        text-align: center;
+        line-height: 100px;
+        position: relative;
+    }
+    #about-title-cont {
+        width: 800px;
+        height: 180px;
+        margin: 0 auto;
+    }
+    #about-inf {
+        top: 10px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /*position: relative;*/
+    }
+    #about-age, #about-edu, #about-loc, #about-sta {
+        width: 200px;
+        height: 180px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+    }
+    .icon {
+        font-size: 42px;
+        line-height: 80px;
+        position: relative;
+        top: 15px;
+        -webkit-transition: top .4s ease-in-out;
+        transition: top .4s ease-in-out;
+
+    }
+    @font-face {
+        font-family: iconfont;
+        src: url(../fonts/icons.woff);
+
+    }
+    .iconfont {
+        font-family: iconfont !important;
+        font-size: 50px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: .2px;
+        -moz-osx-font-smoothing: grayscale;
+        cursor: pointer;
+        -moz-user-select: -moz-none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .about-edu-con {
+        margin: 0 auto;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 35px;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    #about-title-cont p {
+        line-height: 0;
+    }
+    #about-age:hover>i,#about-edu:hover>i,#about-loc:hover>i,#about-sta:hover>i {
+        top: 0
+    }
+
+    #about-age:hover>.about-edu-con,#about-edu:hover>.about-edu-con,#about-loc:hover>.about-edu-con,#about-sta:hover>.about-edu-con {
+        box-shadow: 0 0 0 4px #999;
+        background-color: #f7f7f7
+    }
+
+    #about-inf p:hover {
+        color: red
+    }
+    #about-inf p {
+        /*position: absolute;*/
+        -webkit-transition: color .4s ease-in-out;
+        transition: color .4s ease-in-out;
+    }
+    #skill-box {
+        width: 50%;
+        float: left;
+    }
+    #skill-info {
+        width: 50%;
+        float: right;
+    }
+    #skill-box tr {
+        height: 40px;
+        line-height: 40px;
+    }
+    #skill-box td:first-child {
+        padding-right: 10px;
+    }
+    #skill-box td:last-child {
+        width: 350px;
+        display: flex;
+        justify-content: flex-start;
+        border-right: 2px solid red;
+    }
+    .proBar {
+        height: 25px;
+        width: 0;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 25px;
+        text-align: right;
+        color: #fff;
+        transition: width 5s ease-in-out;
+        background-color: #43cd80;
+    }
+    .section__title-main:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 85px;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: .4s ease-in-out;
+    }
+    .section__title-main:hover:before{
+
+        visibility: visible;
+        transform: scaleX(.1)
+    }
+    .section__title-main {
+        font-size: 24px;
+        font-weight: 700
+    }
+    .section__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #resume-infor {
+        width: 100%;
+        height: 60px;
+        position: relative;
+    }
+    #resume-box {
+        width:100%;
+        height: auto;
+        background-color: #e1e1e1;
+        /*background: url(../img/photos/slide-b6c75025.jpg)no-repeat center/cover;*/
+        border-radius: 20px;
+        transition: 1s;
+    }
+    .resume-box-info {
+        width: 100%;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-direction: column;
+    }
+    .resume-box-info .company-name {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    /*.resume-box-info p {*/
+        /*text-indent: 40px;*/
+        /*line-height: 35px;*/
+    /*}*/
+    #resume{
+        width:100%;
+        height:100%;
+    }
+    #resume-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }

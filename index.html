@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slider-css/normalize.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/slider-css/htmleaf-demo.css">-->
+    <link rel="stylesheet" href="css/slider-css/nheader.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        document.documentElement.className = 'js';
+    </script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="view" id="active">
+    <!--<div class="GalMenu GalDropDown">-->
+        <!--<div class="circle" id="gal">-->
+            <!--<div class="ring">-->
+                <!--<a href="#" title="" class="menuItem">首页</a>-->
+                <!--<a href="#" title="" class="menuItem">个人资料</a>-->
+                <!--<a href="#" title="" class="menuItem">技能</a>-->
+                <!--<a href="#" title="" class="menuItem">项目</a>-->
+                <!--<a href="#" title="" class="menuItem">个人履历</a>-->
+                <!--<a href="#" title="" class="menuItem">联系我</a></div>-->
+            <!--<audio id="audio" src="audio/niconiconi.mp3"></audio>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+    <header class="header">
+        <!--<div class="htmleaf-links">-->
+            <!--<a class="htmleaf-icon icon-htmleaf-home-outline" href="#" title="个人主页"-->
+               <!--target="_blank"><span>个人主页 </span></a>-->
+            <!--<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="#" title="返回"-->
+               <!--target="_blank"><span> 返回</span></a>-->
+        <!--</div>-->
+        <!--<nav class="demos">-->
+            <!--<a class="demos__item demos__item&#45;&#45;current" href="index.html">Default</a>-->
+            <!--<a class="demos__item" href="index.html">Spring</a>-->
+        <!--</nav>-->
+    </header>
+
+    <section class="page page--mover">
+        <div class="la-square-loader">
+            <div></div>
+        </div>
+    </section>
+
+    <!--title-->
+    <div class="title-wrap">
+        <h1 class="title title--main">Full Stack <em> </em>Developer</h1>
+        <p class="title title--sub">Welcome to My HomePage</p>
+    </div>
+
+    <!--展示分类-->
+    <section class="page page--static">
+        <div class="page__title">
+            <h2 class="page__title-main">郭建龙的主页 </h2>
+            <p class="page__title-sub"> Person HomePage <a href="" target="_blank">click</a> website</p>
+        </div>
+        <ul class="grid">
+            <li class="grid__item">
+                <a class="grid__link" href="#active">
+                    <img class="grid__img" src="img/photos/1.png" alt="Some image"/>
+                    <h3 class="grid__item-title">个人信息</h3>
+                </a>
+                <div class="box-content">
+                    <h3 class="title">MESSAGE</h3>
+                    <span class="post">personal information</span>
+                </div>
+            </li>
+            <li class="grid__item">
+                <a class="grid__link" href="#">
+                    <img class="grid__img" src="img/photos/2.png" alt="Some image"/>
+                    <h3 class="grid__item-title">关于我</h3>
+                </a>
+                <div class="box-content">
+                    <h3 class="title">ABOUT</h3>
+                    <span class="post">personal profile</span>
+                </div>
+            </li>
+            <li class="grid__item">
+                <a class="grid__link" href="#">
+                    <img class="grid__img" src="img/photos/3.png" alt="Some image"/>
+                    <h3 class="grid__item-title">个人技能</h3>
+                </a>
+                <div class="box-content">
+                    <h3 class="title">SKILL</h3>
+                    <span class="post">personal skills</span>
+                </div>
+            </li>
+            <li class="grid__item">
+                <a class="grid__link" href="#">
+                    <img class="grid__img" src="img/photos/4.png" alt="Some image"/>
+                    <h3 class="grid__item-title">作品</h3>
+                </a>
+                <div class="box-content">
+                    <h3 class="title">ITEMS</h3>
+                    <span class="post">project introduction</span>
+                </div>
+            </li>
+            <li class="grid__item">
+                <a class="grid__link" href="#">
+                    <img class="grid__img" src="img/photos/5.png" alt="Some image"/>
+                    <h3 class="grid__item-title">个人履历</h3>
+                </a>
+                <div class="box-content">
+                    <h3 class="title">EXPERIENCE</h3>
+                    <span class="post">personal history</span>
+                </div>
+            </li>
+            <li class="grid__item">
+                <a class="grid__link" href="#">
+                    <img class="grid__img" src="img/photos/6.png" alt="Some image"/>
+                    <h3 class="grid__item-title">联系我</h3>
+                </a>
+                <div class="box-content">
+                    <h3 class="title">contact</h3>
+                    <span class="post">more</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <div class="device">
+        <div class="device__screen"></div>
+    </div>
+
+    <button id="showgrid" class="button button--view" aria-label="Show me more">
+        <a href="#"></a>
+    </button>
+
+    <!--内容展示-->
+    <div class="info">
+        <!--个人信息-->
+        <div class="section">
+            <div class="section__title">
+                <h2 class="section__title-main">个人信息 </h2>
+                <p class="section__title-sub"> personal information<a href="" target="_blank">click</a> website</p>
+            </div>
+            <div class="section-content">
+                <div>
+                    <div id="home-head-content"><img src="img/photos/header.jpeg" id="img1" alt=""></div>
+                    <h1>种一棵树最好的时间是十年前，其次是现在</h1>
+                    <div id="home-info-box" style="opacity: 1;"><p id="lining" style="display: block;">郭建龙</p>
+                        <p style="display: block;">求职：前端工程师</p>
+                        <p style="display: block;">工作地点：上海</p>
+                        <p style="display: block;">tel:13333419957</p>
+                        <p style="display: block;">email:405454518@163.com</p>
+                    </div>
+                </div>
+                <a class="cd-btn" href="javascript:;" data-type="page-transition">&#8592; Go back</a>
+            </div>
+
+        </div>
+        <!--关于我-->
+        <div class="section">
+            <div class="section__title">
+                <h2 class="section__title-main">关于我</h2>
+                <p class="section__title-sub">personal profile<a href="" target="_blank">click</a> website</p>
+            </div>
+            <div class="section-content">
+                <div style="display: flex; justify-content: center; align-content: center">
+                    <div id="about">
+                        <div id="about-content">
+                            <!--<div id="about-title"><h2></h2></div>-->
+                            <div id="about-title-cont">
+                                <div id="about-edu"><i class="iconfont icon">&#xe60a;</i>
+                                    <div class="about-edu-con"><p>学历</p>
+                                        <p>大专</p></div>
+                                </div>
+                                <div id="about-age"><i class="iconfont icon">&#xe668;</i>
+                                    <div class="about-edu-con"><p>年龄</p>
+                                        <p>29</p></div>
+                                </div>
+                                <div id="about-loc"><i class="iconfont icon">&#xe6a7;</i>
+                                    <div class="about-edu-con"><p>籍贯</p>
+                                        <p>山西</p></div>
+                                </div>
+                                <div id="about-sta"><i class="iconfont icon">&#xe678;</i>
+                                    <div class="about-edu-con"><p>状态</p>
+                                        <p>离职</p></div>
+                                </div>
+                            </div>
+                            <div id="about-inf">
+                                <p class="st1">
+                                    2014年6月就职于山西硬汉科技有限公司(已离职)</p>
+                                <p class="st2">
+                                    工作之余接触到web前端技术，自己深深地被其所吸引</p>
+                                <p class="st3">
+                                    前端技术的发展百花齐放、日新月异，技能点点的我既兴奋又激动</p>
+                                <p class="st4">
+                                    精美的特效，漂亮的代码让我经常感叹，让我产生了浓厚的兴趣!</p>
+                                <p class="st4">
+                                    随着技术的更新我会不断的学习一些新的前沿技术，现阶段正在学习微信小程序开发</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="cd-btn" href="javascript:;" data-type="page-transition">&#8592; Go back</a>
+            </div>
+        </div>
+        <!--职业技能-->
+        <div class="section">
+            <div class="section__title">
+                <h2 class="section__title-main">职业技能</h2>
+                <p class="section__title-sub">personal History<a href="" target="_blank">click</a> website</p>
+            </div>
+            <div class="section-content">
+                <div id="skill">
+                    <div id="skill-content">
+                        <div id="skill-box">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>HTML5</td>
+                                    <td>
+                                        <div class="proBar" style="width: 85%; background-color: rgb(255, 69, 0);">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CSS3</td>
+                                    <td>
+                                        <div class="proBar" style="width: 85%; background-color: green;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td>
+                                        <div class="proBar" style="width: 80%; background-color: rgb(139, 0, 0);">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>jQuery</td>
+                                    <td>
+                                        <div class="proBar" style="width: 90%; background-color: blue;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ajax</td>
+                                    <td>
+                                        <div class="proBar" style="width: 90%; background-color: #50930e;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bootstrap</td>
+                                    <td>
+                                        <div class="proBar" style="width: 85%; background-color: rgb(0, 0, 0);">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>React</td>
+                                    <td>
+                                        <div class="proBar" style="width: 65%; background-color: rgb(242,188,80);">
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Vue</td>
+                                    <td>
+                                        <div class="proBar" style="width: 65%; background-color: rgb(128, 0, 128);">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>php</td>
+                                    <td>
+                                        <div class="proBar" style="width: 55%; background-color: rgb(139, 69, 19);">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>nodeJs</td>
+                                    <td>
+                                        <div class="proBar" style="width: 55%; background-color: rgb(229,113,23);">
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="progress">
+
+                            </div>
+                            <div class="progress">
+
+                            </div>
+                            <div class="progress">
+
+                            </div>
+                            <div class="progress">
+
+                            </div>
+
+                        </div>
+                        <div id="skill-info">
+                            <p>熟悉HTML5、CSS3，熟练掌握HTML、DIV+CSS，等前端开发技术，熟悉W3C规范；</p>
+                            <p>熟悉JavaScript、Ajax、DOM等前端技术，熟悉面向对象编程思想；</p>
+                            <p>熟悉使用jQuery类库、Bootstrap框架，实现网页特效和用户交互体验，熟悉各种前端调试工具；</p>
+                            <p>掌握Sass、Webpack、git等前端项目构建和管理工具；</p>
+                            <p>掌握react.js，node.js vue.js框架，了解服务端语言PHP，熟悉mvc模块化开发规范；</p>
+                            <p>有强烈的上进心和求知欲，热爱前端技术，善于学习和运用新知识，性格乐观，善于沟通，有较强的学习能力；</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="cd-btn" href="javascript:;" data-type="page-transition">&#8592; Go back</a>
+            </div>
+        </div>
+        <!--作品-->
+        <div class="section">
+            <div class="section__title">
+                <h2 class="section__title-main">我的作品</h2>
+                <p class="section__title-sub"> project introduction<a href="" target="_blank">click</a>website</p>
+            </div>
+            <div class="contents">
+                <div class="wrap" id="wrap">
+                    <div class="wrapper">
+                        <div class="product_list" id="product_list">
+                            <div class="product_box shoulei show">
+                                <div class="bg_box"><img src="img/img/bg_5.jpg"></div>
+                                <div class="content">
+                                    <div class="main_box">
+                                        <h2 class="hide_txt">PHP项目</h2>
+                                        <h3>基于MVC框架</h3>
+                                        <img src="img/xinchen.png" alt="">
+                                        <a href="https://luever.duapp.com" target="_blank" class="btn_product" title="旅游APP">旅游APP</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_box xnet">
+                                <div class="bg_box"><img src="img/img/bg_4.jpg"></div>
+                                <div class="content">
+                                    <div class="main_box">
+                                        <h2 class="hide_txt">React项目</h2>
+                                        <h3>基于React router</h3>
+                                        <img src="img/car.png" alt="">
+                                        <a href="https://easycar.duapp.com" target="_blank" class="btn_product" title="租车服务APP">租车服务APP</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_box member">
+                                <div class="bg_box"><img src="img/img/bg_3.jpg"></div>
+                                <div class="content">
+                                    <div class="main_box">
+                                        <h2 class="hide_txt">VUE项目</h2>
+                                        <h3>VUE单页面应用框架</h3>
+                                        <img src="img/ktv.png" alt="">
+                                        <a href="https://vuektvapp.duapp.com" target="_blank" class="btn_product" title="KTV　APP">KTV　APP</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_box xkn">
+                                <div class="bg_box"><img src="img/img/bg_2.jpg"></div>
+                                <div class="content">
+                                    <div class="main_box">
+                                        <h2 class="hide_txt png">NodeJs小应用</h2>
+                                        <h3></h3>
+                                        <div>
+                                            <img src="img/static.png" alt="">
+                                            <img src="img/note.png" alt="">
+                                            <img src="img/speed-background.png" alt="">
+                                        </div>
+                                        <a href="https://www.npmjs.com/package/static-servers" class="btn_product-1" target="_blank" title="静态服务器">静态服务器</a>
+                                        <a href="https://greatpersonal.github.io/note/" target="_blank" class="btn_product" title="便签">便签</a>
+                                        <a href="https://www.npmjs.com/package/speedy-background" class="btn_product-2" target="_blank" title="桌面背景图切换">桌面背景图切换</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_btns" id="product_btns">
+                            <div class="content">
+                                <div class="btns_area">
+                                    <div class="btns_box" id="control_box">
+                                        <a href="#" class="btn_ipr btn_shoulei cur" title="PHP" ><span class="ic_shoulei hide_txt png"></span></a>
+                                        <a href="#" class="btn_xnet" title="REACT"><span class="ic_xnet hide_txt png"></span></a>
+                                        <a href="#" class="btn_member" title="VUE"><span class="ic_member hide_txt png"></span></a>
+                                        <a href="#" class="btn_xkn" title="NODEJS"><span class="ic_xkn hide_txt png"></span></a>
+                                        <span class="ic_line" id="ic_line"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rpt_bg png" id="rpt_bg"></div>
+                    </div>
+                </div>
+                <!--<a href="https://greatpersonal.github.io/baiduyuqing/">1 百度舆情<br></a>-->
+                <!--<a href="https://greatpersonal.github.io/note/">2 便签<br></a>-->
+                <!--<a href=" https://greatpersonal.github.io/appleweb/">3 apple<br></a>-->
+                <!--<a href="">4 静态服务器(npm.js)npm install -g static-servers<br></a>-->
+                <!--<a href="">5 桌面背景图切换  npm install -g speedy-background<br></a>-->
+                <!--<a href="https://greatpersonal.github.io/bootstrap/">7 bootstrap响应式网页<br></a>-->
+                <!--<a href="https://luever.duapp.com">8 项目:旅游webapp<br></a>-->
+                <!--<a href="https://easycar.duapp.com">9 项目：租车服务<br></a>-->
+                <!--<a href="https://calculator.duapp.com">10 react 计算器<br></a>-->
+                <!--<a href="https://appnews.duapp.com">11 新闻爬虫<br></a>-->
+                <!--<a href="https://phpmusic.duapp.com">12 music-php<br></a>-->
+            </div>
+            <div class="section-content">
+                <a class="cd-btn" href="javascript:;" data-type="page-transition">&#8592; Go back</a>
+            </div>
+        </div>
+        <!--个人履历-->
+        <div class="section">
+            <div class="section__title">
+                <h2 class="section__title-main">个人履历 </h2>
+                <p class="section__title-sub"> Person HomePage <a href="" target="_blank">click</a> website</p>
+            </div>
+            <div class="section-content">
+                <div id="resume">
+                    <div id="resume-content">
+                        <!--<div id="resume-infor"><p class="resume-info1" rel="0,100,0,422" style="top: 0px; left: 422px;">-->
+                            <!--工作之余开始学习作全栈开发</p>-->
+                            <!--<p class="resume-info2" rel="35,620,35,332" style="top: 35px; left: 332px;">-->
+                                <!--深深地被前端技术所吸引,从此走上了一条噼里啪啦敲代码之路</p></div>-->
+                        <div id="resume-box" style="margin-top: 60px;">
+                            <div class="resume-box-info">
+                                <p class="company-name">硬汉有限公司</p>
+                                <p>2014.6-2017.5</p>
+                                <p>任职前端工程师</p>
+                                <p>负责快速构建高质量移动APP/PC</p>
+                                <p>根据业务需求设计合适的工程项目</p>
+                                <p>高度组件化、模块化思维，拥有各平台调试能力</p>
+                                <p>同期学习ES6及vue,react,NodeJs,微信小程序,体会函数式编程思想</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="cd-btn" href="javascript:;" data-type="page-transition">&#8592; Go back</a>
+            </div>
+        </div>
+        <!--联系我-->
+        <div class="section">
+            <div class="section__title">
+                <h2 class="section__title-main">联系我</h2>
+                <p class="section__title-sub">contact<a href="" target="_blank"> click</a> website</p>
+            </div>
+            <div class="section-content">
+                        <div id="contact-info"><p>经过一段时间在互联网技术领域的探索</p>
+                            <p>我决心在未来的职业生涯中专注于--网站全栈技术与网站交互用户体验相关的工作</p>
+                            <p><span class="contact-tip">热爱前端、专注前端！ </span></p></div>
+                        <div class="downpdf" id="downpdf">
+                            <a href="img/个人简历.png" target="_blank">下载简历</a></div>
+                        <div id="contact-panel"><a href="https://github.com/GreatPersonal" target="_blank" title="github">github</a>
+                            <a href="#" title="blog" target="_blank">博客</a>
+                            <!--<a href="" title="segmentfault" target="_blank">segmentfault</a>-->
+                            <a href="#" title="微博" target="_blank">微博</a>
+                            <a href="#" title="知乎" target="_blank">知乎</a>
+                        </div>
+                <a class="cd-btn" href="javascript:;" data-type="page-transition">&#8592; Go back</a>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="related">
+        <h3></h3>
+        <a href="">
+            <h3>感谢您的阅读！</h3>
+        </a>
+        <a href="">
+            <h3>联系电话：13333419957 &nbsp;&nbsp;&nbsp;328936011@qq.com</h3>
+        </a>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/classie.js"></script>
+<script src="js/dynamics.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<!--<script src="js/GalMenu.js"></script>-->
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+for (var i = 0,
+         l = items.length; i < l; i++) {
+    items[i].style.left = (50 - 35 * Math.cos(-0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+    items[i].style.top = (50 + 35 * Math.sin(-0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+}</script>
+
+
+
